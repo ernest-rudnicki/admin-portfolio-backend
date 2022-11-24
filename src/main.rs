@@ -2,8 +2,8 @@ use actix_web:: {get, web, App, HttpServer};
 use serde::{Deserialize, Serialize};
 use std::sync::Mutex;
 
-mod todolist;
-use todolist::services;
+mod users;
+use users::services;
 
 const HEALTH_CHECK_MSG: &str = "This is a health check";
 

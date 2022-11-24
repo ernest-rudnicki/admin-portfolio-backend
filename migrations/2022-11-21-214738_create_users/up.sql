@@ -1,0 +1,8 @@
+-- Your SQL goes here
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(10) NOT NULL,
+    email VARCHAR(20) NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+)
